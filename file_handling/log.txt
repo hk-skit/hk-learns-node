@@ -1,0 +1,24 @@
+
+$Normalised --> /foo/bar/baz/asdf
+Joines --> /foo/oof/blah../blah
+{
+    "dev": 16777220,
+    "mode": 33188,
+    "nlink": 1,
+    "uid": 501,
+    "gid": 20,
+    "rdev": 0,
+    "blksize": 4096,
+    "ino": 9392112,
+    "size": 619,
+    "blocks": 8,
+    "atimeMs": 1512811778000,
+    "mtimeMs": 1512811778000,
+    "ctimeMs": 1512811778000,
+    "birthtimeMs": 1512497674000,
+    "atime": "2017-12-09T09:29:38.000Z",
+    "mtime": "2017-12-09T09:29:38.000Z",
+    "ctime": "2017-12-09T09:29:38.000Z",
+    "birthtime": "2017-12-05T18:14:34.000Z"
+}
+File Descriptor --> 13
