@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hk-skit/hk-learns-node#readme",
   "dependencies": {
     "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "tap": "^11.0.0"
   }
 }
