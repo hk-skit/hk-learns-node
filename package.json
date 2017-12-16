@@ -1,0 +1,22 @@
+{
+  "name": "hk-learns-node",
+  "version": "1.0.0",
+  "description": "Just for learning purpose.",
+  "main": "echo_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hk-skit/hk-learns-node.git"
+  },
+  "author": "Hitesh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hk-skit/hk-learns-node/issues"
+  },
+  "homepage": "https://github.com/hk-skit/hk-learns-node#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
