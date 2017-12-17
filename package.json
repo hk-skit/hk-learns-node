@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hk-skit/hk-learns-node#readme",
   "dependencies": {
+    "async": "^2.6.0",
     "request": "^2.83.0"
   },
   "devDependencies": {
