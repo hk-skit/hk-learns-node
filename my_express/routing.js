@@ -47,9 +47,9 @@ app.get('/ab(cd)?e', function (req, res) {
 });
 
 // This route path will match anything with an “a” in the route name.
-app.get(/a/, function (req, res) {
-    res.send('/a/')
-});
+// app.get(/a/, function (req, res) {
+//     res.send('/a/')
+// });
 
 // This route path will match butterfly and dragonfly, but not butterflyman,
 // dragonflyman, and so on.
@@ -67,6 +67,24 @@ app.get('/users/:userId/books/:bookId', function (req, res) {
 app.get('/flights/:from-:to', (req, res) => {
     res.send(req.params);
 });
+
+const birdRouter = express.Router();
+
+// middleware that is specific to this router
+birdRouter.use(function timeLog(req, res, next) {
+    console.log('Time: ', Date.now())
+    next()
+});
+// define the home page route
+birdRouter.get('/', function (req, res) {
+    res.send('Birds home page')
+});
+// define the about route
+birdRouter.get('/about', function (req, res) {
+    res.send('About birds')
+});
+
+app.use('/birds', birdRouter);
 
 app.listen(PORT, () => {
     console.log(`Listening at ${PORT}`);
